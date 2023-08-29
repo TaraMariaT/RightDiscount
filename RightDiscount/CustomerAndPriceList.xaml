@@ -1,0 +1,32 @@
+﻿<Page x:Class="RightDiscount.CustomerAndPriceList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RightDiscount"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+      Title="Customers And Prices List">
+    <Canvas Margin="10" Background="#FF343434">
+        <TextBlock FontFamily="DokChampa" FontWeight="Bold" Margin="5,10,0,10" FontSize="24" Foreground="Crimson" Background="#99000000" Canvas.Left="179" Canvas.Top="10" HorizontalAlignment="Center">RightDiscount</TextBlock>
+        <TextBlock FontFamily="DokChampa" FontWeight="Bold" Margin="5,0,0,10" FontSize="16" Foreground="White" Canvas.Left="25" Canvas.Top="58" Background="#99000000" Width="178"> Tuotteet:</TextBlock>
+        <TextBlock FontFamily="DokChampa" FontWeight="Bold" Margin="5,0,0,10" FontSize="16" Foreground="White" Canvas.Left="360" Canvas.Top="58" Background="#99000000" Width="178"> Asiakkaat:</TextBlock>
+        <RadioButton Name ="RdButton1" Canvas.Left="15" Canvas.Top="80" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton1_Click" GroupName="Group1">Tietokonepöytä</RadioButton>
+        <RadioButton Name ="RdButton2" Canvas.Left="15" Canvas.Top="110" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton2_Click" GroupName="Group1">Kokouspöytä</RadioButton>
+        <RadioButton Name ="RdButton3" Canvas.Left="15" Canvas.Top="140" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton3_Click" GroupName="Group1">Tietokonetuoli</RadioButton>
+        <RadioButton Name ="RdButton4" Canvas.Left="15" Canvas.Top="170" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton4_Click" GroupName="Group1">Kaappi</RadioButton>
+        <RadioButton Name ="RdButton5" Canvas.Left="350" Canvas.Top="80" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton5_Click" GroupName="Group2">GreatOffices Oy</RadioButton>
+        <RadioButton Name ="RdButton6" Canvas.Left="350" Canvas.Top="110" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton6_Click" GroupName="Group2">TavaratToimistoon Oy</RadioButton>
+        <RadioButton Name ="RdButton7" Canvas.Left="350" Canvas.Top="140" Margin="5,5,5,5" FontSize="16" FontWeight="Bold" Click="RdButton7_Click" GroupName="Group2">Toimistola Oy</RadioButton>
+        <TextBlock FontFamily="DokChampa" FontWeight="Bold" Margin="5,0,0,10" FontSize="16" Foreground="White" Canvas.Left="177" Canvas.Top="207"> Kappalemäärä:</TextBlock>
+        <TextBlock FontFamily="DokChampa" FontWeight="Bold" Margin="5,0,0,10" FontSize="16" Foreground="White" Canvas.Left="20" Canvas.Top="207"> Kappalehinta:</TextBlock>
+        <TextBlock x:Name="ShowPrice1" Canvas.Left="75" Canvas.Top="234" FontSize="20" FontWeight="Bold" FontFamily="DokChampa" Foreground="Crimson" Text="0,00€"/>
+        <TextBlock x:Name="ShowContract" Canvas.Left="20" Canvas.Top="283" FontSize="14" FontWeight="Bold" FontFamily="DokChampa" Foreground="White" Text="Alennussopimus:" Width="523"/>
+        <TextBlock Canvas.Left="90" Canvas.Top="345" FontSize="14" FontWeight="Bold" FontFamily="DokChampa" Foreground="White" Width="448" xml:space="preserve">Käyttöohje: Valitse molemmista valikoista (Tuotteet ja Asiakkaat) yksi
+vaihtoehto ja syötä kappalemäärä</TextBlock>
+        <TextBox x:Name="volumeInput1" Width="111" Canvas.Left="184" Canvas.Top="238"/>
+        <Button Name="Button3" Click="Button3_Click" Canvas.Left="20" Canvas.Top="345">Näytä hinta</Button>
+        <TextBlock FontFamily="DokChampa" FontWeight="Bold" Margin="5,0,0,10" FontSize="16" Foreground="White" Canvas.Left="20" Canvas.Top="380">Hinta:</TextBlock>
+        <TextBlock x:Name="ShowPrice2" Canvas.Left="89" Canvas.Top="380" FontSize="24" FontWeight="Bold" FontFamily="DokChampa" Foreground="Crimson" Text="0,00€" RenderTransformOrigin="-0.76,0.758"/>
+    </Canvas>
+</Page>
